@@ -104,4 +104,12 @@
   .footer-soc {
     margin-right: 80px;
   }
+  .sub {
+    width: 453px;
+  }
+  .foot-sub {
+    min-width: 264px;
+  }
+  .sub-form {
+  }
 }
