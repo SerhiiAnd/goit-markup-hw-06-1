@@ -12,6 +12,20 @@
     /* gap: 24px; */
     column-gap: 16px;
   }
+  .foot {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .foo-con {
+    /* margin-right: 120px; */
+    /* gap: 24px; */
+    margin-right: 24px;
+  }
+  .sub-form {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -44,11 +58,22 @@
   .customer-list {
     column-gap: 24px;
   }
+  .sub {
+    width: 453px;
+  }
+  .foot-sub {
+    width: 264px;
+  }
+  .sub-form {
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .advantages {
     padding: 120px 0;
@@ -111,5 +136,6 @@
     min-width: 264px;
   }
   .sub-form {
+    flex-wrap: nowrap;
   }
 }
