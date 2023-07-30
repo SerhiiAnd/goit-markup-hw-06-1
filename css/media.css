@@ -42,6 +42,10 @@
     gap: 40px;
   }
 
+  .menu-open-btn {
+    display: none;
+  }
+
   .head-menu-link {
     display: block;
     color: #2e2f42;
