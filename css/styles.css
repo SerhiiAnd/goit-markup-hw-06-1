@@ -118,6 +118,8 @@ body {
   z-index: 2;
   padding: 24px;
   transform: translateX(100%);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .mobil-menu.is-open {
   transform: translateX(0);
