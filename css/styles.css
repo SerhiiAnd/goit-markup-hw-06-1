@@ -200,6 +200,7 @@ body {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .mob-address-item {
