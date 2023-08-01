@@ -105,6 +105,19 @@ body {
 
 /*-----------MOB-MENU------------*/
 
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: #fff;
+  cursor: pointer;
+  /* fill: #2e2f42; */
+  /* color: #000; */
+}
+.mob-men {
+  fill: #2e2f42;
+}
 .mobil-menu {
   background-color: #fff;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -128,6 +141,29 @@ body {
   display: block;
   margin-left: auto;
   margin-bottom: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #e7e9fc;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-soc {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+.mobile-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
 }
 .modal-icon {
 }
@@ -786,14 +822,18 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn,
+.menu-close-btn:hover,
+.modal-close-btn,
+.menu-close-btn:focus {
   border: none;
   background-color: #404bbf;
 }
 
-.modal-close-btn:hover .modal-icon,
-.modal-close-btn:focus .modal-icon {
+.modal-close-btn,
+.menu-close-btn:hover .modal-icon,
+.modal-close-btn,
+.menu-close-btn:focus .modal-icon {
   fill: #ffffff;
 }
 .modal-titel {
