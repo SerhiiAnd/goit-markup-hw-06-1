@@ -82,8 +82,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px;  */
+
   padding: 24px 0;
+  display: block;
 }
 .head-logo-dark {
   color: var(--navyblue);
@@ -106,7 +108,6 @@ body {
 
 /*-----------MOB-MENU------------*/
 .mob-menu-list {
-  margin-bottom: 284px;
 }
 
 .menu-open-btn {
@@ -115,15 +116,16 @@ body {
 
   display: block;
   margin-left: auto;
-  margin-bottom: 24px;
-  margin-top: 24px;
-
+  /* margin-bottom: 24px;
+  margin-top: 24px; */
+  padding: 0;
   cursor: pointer;
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
 }
 .mob-men {
+  /* padding: 0; */
 }
 .mobil-menu {
   background-color: #fff;
@@ -138,14 +140,19 @@ body {
   z-index: 2;
   padding: 24px;
   transform: translateX(100%);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .mobil-menu.is-open {
   transform: translateX(0);
 }
 .menu-close-btn {
-  display: block;
+  /* padding: 0; */
+  display: flex;
+  width: 24px;
+  height: 24px;
   margin-left: auto;
   margin-bottom: 40px;
   border-radius: 50%;
@@ -153,24 +160,23 @@ body {
   background-color: #e7e9fc;
   align-items: center;
   justify-content: center;
+  padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-soc {
-  position: absolute;
-
-  bottom: 0;
-  left: 0;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 40px;
+  position: relative;
+  margin-top: auto;
+  /* padding-right: 40px; */
+  /* padding-bottom: 40px; */
+  /* padding-left: 40px; */
 
   justify-content: space-between;
 }
 .mobile-box {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 56px;
 }
@@ -219,8 +225,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
 }
-.mob-address-link:hover,
-.mob-address-link:focus {
+.mob-address-tel {
   color: #404bbf;
   font-size: 36px;
   font-weight: 700;
@@ -265,7 +270,7 @@ body {
   font-weight: 700;
   /* line-height: 1.07; */
   letter-spacing: 0.02em;
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto;
   /* margin-bottom: 48px; */
   margin-bottom: 72px;
@@ -473,6 +478,9 @@ body {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+.castom-cont {
+  width: 100%;
+}
 
 .customer-title {
   color: var(--navyblue);
@@ -486,20 +494,15 @@ body {
 }
 
 .customer-list {
-  width: 100%;
   display: flex;
-  gap: 16px;
   flex-wrap: wrap;
-  /* align-items: center;
- justify-items: center; */
   justify-content: center;
-  /* gap: 72px; */
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 .customer-cl {
-  /* width: calc((100% - 120px) / 6); */
-  height: 88px;
-  margin-bottom: 72px;
+  width: calc((100% - 16px) / 2);
 }
 
 .customer-link {
@@ -548,7 +551,9 @@ body {
   /* margin-right: 120px; */
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
 }
 .footer-logo-blue {
   color: var(--iris);
@@ -621,7 +626,7 @@ body {
 .sub {
   width: 100%;
   /* width: 453px; */
-  height: 80px;
+  /* height: 80px; */
   display: block;
   align-items: center;
 }
@@ -639,7 +644,7 @@ body {
   display: flex;
   gap: 24px;
   position: relative;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -820,8 +825,10 @@ body {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px;
+  min-height: 584px; */
+  width: 100vw;
+  height: 100vh;
   background-color: #fcfcfc;
   border-radius: 4px;
   position: absolute;
@@ -863,20 +870,28 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn,
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border: none;
+  background-color: #404bbf;
+}
+
 .menu-close-btn:hover,
-.modal-close-btn,
 .menu-close-btn:focus {
   border: none;
   background-color: #404bbf;
 }
 
-.modal-close-btn,
-.menu-close-btn:hover .modal-icon,
-.modal-close-btn,
-.menu-close-btn:focus .modal-icon {
+.modal-close-btn:hover .modal-icon,
+.modal-close-btn:focus .modal-icon {
   fill: #ffffff;
 }
+
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  fill: #ffffff;
+}
+
 .modal-titel {
   font-size: 16px;
   font-weight: 500;
