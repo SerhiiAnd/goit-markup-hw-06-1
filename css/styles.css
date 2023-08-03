@@ -135,8 +135,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
+  width: 100%;
   z-index: 2;
   padding: 24px;
   transform: translateX(100%);
@@ -175,10 +176,11 @@ body {
   justify-content: space-between;
 }
 .mobile-box {
+  max-width: 410px;
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  gap: 56px;
+  gap: 40px;
 }
 .modal-icon {
 }
@@ -208,6 +210,8 @@ body {
   gap: 40px;
   flex-wrap: wrap;
   margin-bottom: 48px;
+  max-width: 410px;
+  width: 100%;
 }
 
 .mob-address-item {
@@ -227,8 +231,8 @@ body {
 }
 .mob-address-tel {
   color: #404bbf;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 600;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
@@ -827,8 +831,9 @@ body {
 .modal {
   /* width: 408px;
   min-height: 584px; */
-  width: 100vw;
-  height: 100vh;
+  max-width: 408px;
+  min-height: 584px;
+  width: 95%;
   background-color: #fcfcfc;
   border-radius: 4px;
   position: absolute;
